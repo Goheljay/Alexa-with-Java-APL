@@ -1,0 +1,174 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "demo skill",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "WhatUserName",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.StreetName"
+            }
+          ],
+          "samples": [
+            "{name}",
+            "my name  is {name}",
+            "name is {name}"
+          ]
+        },
+        {
+          "name": "PlayMusic",
+          "slots": [
+            {
+              "name": "songname",
+              "type": "artistname"
+            }
+          ],
+          "samples": [
+            "play {songname}"
+          ]
+        },
+        {
+          "name": "PlaySongWay",
+          "slots": [
+            {
+              "name": "way",
+              "type": "playtype"
+            }
+          ],
+          "samples": [
+            "play by  {way}"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "Yup",
+            "Ya sure",
+            "yes"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "never",
+            "Not good",
+            "Not Like",
+            "No"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "artistname",
+          "values": [
+            {
+              "name": {
+                "value": "Imagine Dragons",
+                "synonyms": [
+                  "Imagin dragons",
+                  "imagin dragons",
+                  "Imagine Dragons"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Martin garrix",
+                "synonyms": [
+                  "martin garrix",
+                  "martingarrix",
+                  "Martin garrix"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "arjit sigh",
+                "synonyms": [
+                  "Arijit singh",
+                  "arijitsigh",
+                  "arjit sign"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "playtype",
+          "values": [
+            {
+              "name": {
+                "value": "artist",
+                "synonyms": [
+                  "by artist",
+                  "Artist",
+                  "artist",
+                  "By Artist",
+                  "By artist"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "genere",
+                "synonyms": [
+                  "By Genere",
+                  "by geenre",
+                  "Genere",
+                  "genere",
+                  "geere"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "keyword",
+                "synonyms": [
+                  "by keyword",
+                  "keyword",
+                  "By Ketword",
+                  "Keyword",
+                  "keyword"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
